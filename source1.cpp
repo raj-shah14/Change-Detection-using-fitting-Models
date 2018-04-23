@@ -15,6 +15,7 @@ using namespace std;
 
 cv::RotatedRect getErrorEllipse(double chisquare_val, cv::Point2f mean, cv::Mat covmat);
 
+//Initializing Variables
 Mat img1, img2,src1,src2,src3,src4,src5,src6, plot;
 double mean,thresholdval,cthresholdval,radius;
 int i, j, k, n, choseImgSet, selectType, distType,gaus;
@@ -24,6 +25,7 @@ vector<Point2f>intensity;
 vector<Point2f>location;
 Vec4f lines;
 
+//Loading Images as Arguments
 int main(int argc, char** argv) {
 /*	if (argc != 7)
 	{
